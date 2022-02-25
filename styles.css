@@ -1,8 +1,49 @@
+/*
+for all files, include the swup.js script
+for all files, include script,js
+in script.js, just include const swup = new Swup()
+
+everything that we want to animate should be assigned a class
+specifically, that class MUST start with .transition
+
+the transition classes begin with the default setting
+the transition time is also defined
+
+to declare transformation of properties that are leaving,
+use the class html.is-leaving .[property class] {}
+put into this class what the html should transition to while it's leaving
+after it's left the .is-leaving class will automatically be removed
+
+
+
+ */
+
+
+
 .transition-fade {
   opacity: 1;
   transition: 500ms;
+  transform: translateX(0);
+  transform-origin: left;
 }
 
 html.is-animating .transition-fade {
+  opacity: 1;
+  transform: translateX(100%);
+}
+
+html.is-leaving .transition-fade {
   opacity: 0;
+  transform: translateX(0);
+}
+
+
+.transition-swipe {
+  transition: 500ms;
+  transform: translateY(0);
+}
+
+html.is-animating .transition-swipe {
+  opacity: 1;
+  transform: translateY(100px);
 }
