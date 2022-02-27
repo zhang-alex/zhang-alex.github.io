@@ -33,7 +33,8 @@ after it's left the .is-leaving class will automatically be removed
  }
 
  .home {
-   animation: home-animation 5s linear 1s forward;
+   opacity: 0;
+   /* animation: home-animation 5s linear 1s forward; */
  }
 
  @keyframes home-animation {
