@@ -136,6 +136,7 @@ after it's left the .is-leaving class will automatically be removed
    }
  }
 
+#
 #linkedin {
   animation: linkedin-bounce 2s infinite ease alternate;
 }
@@ -146,7 +147,7 @@ after it's left the .is-leaving class will automatically be removed
   }
 
   to {
-    transform: translateY(-30px);
+    transform: translateY(30px);
   }
 }
 
@@ -161,7 +162,7 @@ after it's left the .is-leaving class will automatically be removed
   }
 
   to {
-    transform: translateY(-25px);
+    transform: translateY(25px);
   }
 }
 
@@ -176,10 +177,26 @@ after it's left the .is-leaving class will automatically be removed
   }
 
   to {
-    transform: translateY(-20px);
+    transform: translateY(20px);
   }
 }
-.swup-transition-fade {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .swup-transition-fade {
   opacity: 1;
   transition: 500ms;
   transform: translateX(0);
@@ -205,4 +222,4 @@ html.is-leaving .swup-transition-fade {
 html.is-animating .swup-transition-swipe {
   opacity: 1;
   transform: translateY(100px);
-}
+} */
