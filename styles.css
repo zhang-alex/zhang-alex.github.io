@@ -183,6 +183,45 @@ after it's left the .is-leaving class will automatically be removed
 
 
 
+#Stanford-logo {
+  transition: transform 0.5s;
+  transform-box: fill-box;
+  transform-origin: -100% -40%;
+}
+
+#Stanford-logo:hover {
+  transform: scale(1.2);
+}
+
+#bulletin-board {
+  transition: transform 0.5s;
+  transform-box: fill-box;
+  transform-origin: 20% 10%;
+
+}
+
+#bulletin-board:hover {
+  transform: scale(1.1);
+}
+
+#diploma {
+  transition: transform 0.5s;
+  transform-box: fill-box;
+  transform-origin: -60% 20%;
+}
+#diploma:hover {
+  transform: scale(1.2);
+}
+
+#computer {
+  transition: transform 0.5s;
+  transform-box: fill-box;
+  transform-origin: 08% 80%;
+}
+
+#computer:hover {
+  transform: scale(1.1);
+}
 
 
 
