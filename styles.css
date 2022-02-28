@@ -216,7 +216,7 @@ after it's left the .is-leaving class will automatically be removed
 #computer {
   transition: transform 0.5s;
   transform-box: fill-box;
-  transform-origin: 08% 80%;
+  transform-origin: 80px 80px;
 }
 
 #computer:hover {
@@ -224,13 +224,13 @@ after it's left the .is-leaving class will automatically be removed
 }
 
 
-#leg {
+/* #leg {
   transform-box: fill-box;
-  transform-origin: -50% -40%;
+  transform-origin: -0% -0%;
   animation: leg-moving 34s cubic-bezier(0.51, 0.01, 0.43, 0.99) 3s infinite
-}
+} */
 
-@keyframes leg-moving {
+/* @keyframes leg-moving {
     0% {transform: rotate(0deg);}
     3% {transform: rotate(10deg);}
     6% {transform: rotate(0deg);}
@@ -254,7 +254,7 @@ after it's left the .is-leaving class will automatically be removed
     87% {transform: rotate(0deg);}
 
     100% {transform: rotate(0deg);}
-}
+} */
 
 #rocket {
   transform-box: fill-box;
