@@ -136,7 +136,7 @@ after it's left the .is-leaving class will automatically be removed
    }
  }
 
-#
+
 #linkedin {
   animation: linkedin-bounce 2s infinite ease alternate;
 }
