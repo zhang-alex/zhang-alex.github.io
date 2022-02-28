@@ -196,7 +196,7 @@ after it's left the .is-leaving class will automatically be removed
 #bulletin-board {
   transition: transform 0.5s;
   transform-box: fill-box;
-  transform-origin: 20% 10%;
+  transform-origin: center;
 
 }
 
@@ -207,7 +207,7 @@ after it's left the .is-leaving class will automatically be removed
 #diploma {
   transition: transform 0.5s;
   transform-box: fill-box;
-  transform-origin: -60% 20%;
+  transform-origin: center;
 }
 #diploma:hover {
   transform: scale(1.2);
@@ -216,7 +216,7 @@ after it's left the .is-leaving class will automatically be removed
 #computer {
   transition: transform 0.5s;
   transform-box: fill-box;
-  transform-origin: 80px 80px;
+  transform-origin: center;
 }
 
 #computer:hover {
