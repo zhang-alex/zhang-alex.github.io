@@ -186,7 +186,7 @@ after it's left the .is-leaving class will automatically be removed
 #Stanford-logo {
   transition: transform 0.5s;
   transform-box: fill-box;
-  transform-origin: -100% -40%;
+  transform-origin: center;
 }
 
 #Stanford-logo:hover {
