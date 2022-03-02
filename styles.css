@@ -100,7 +100,7 @@ after it's left the .is-leaving class will automatically be removed
 
 
 
- .professional {
+ .home {
    opacity: 0;
    animation: appear-animation 2.5s ease-in 0.5s forwards;
  }
