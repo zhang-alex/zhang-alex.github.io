@@ -100,16 +100,17 @@ after it's left the .is-leaving class will automatically be removed
 
 
 
- .home {
+ .professional {
    opacity: 0;
-   animation: home-animation 2.5s ease-in 0.5s forwards;
+   animation: appear-animation 2.5s ease-in 0.5s forwards;
  }
 
- @keyframes home-animation {
+ @keyframes appear-animation {
   to {
     opacity: 1;
   }
  }
+
 #linkedin {animation: linkedin-bounce 2s infinite ease alternate;}
 
 @keyframes linkedin-bounce {

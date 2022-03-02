@@ -1,0 +1,21 @@
+
+ * {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+ }
+
+ body {
+   opacity: 0;
+   animation: appear-animation 0.75s ease-in forwards;
+ }
+
+ @keyframes appear-animation {
+   from {
+     opacity: 0;
+   }
+
+   to {
+     opacity: 1;
+   }
+ }
