@@ -33,19 +33,6 @@ after it's left the .is-leaving class will automatically be removed
    animation: transition-to-white 0.7s ease forwards 4.0s;
  }
 
-
- .home {
-   opacity: 0;
-   animation: home-animation 2.5s ease-in 0.5s forwards;
- }
-
- @keyframes home-animation {
-  to {
-    opacity: 1;
-  }
- }
-
-
  #logo {
    position: absolute;
    top: 50%;
@@ -112,6 +99,17 @@ after it's left the .is-leaving class will automatically be removed
  }
 
 
+
+ .home {
+   opacity: 0;
+   animation: home-animation 2.5s ease-in 0.5s forwards;
+ }
+
+ @keyframes home-animation {
+  to {
+    opacity: 1;
+  }
+ }
 #linkedin {animation: linkedin-bounce 2s infinite ease alternate;}
 
 @keyframes linkedin-bounce {
