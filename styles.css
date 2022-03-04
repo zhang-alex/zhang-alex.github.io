@@ -111,7 +111,7 @@ after it's left the .is-leaving class will automatically be removed
   }
  }
 
-#linkedin {animation: linkedin-bounce 2s infinite ease alternate;}
+#linkedin, #github, #email {animation: linkedin-bounce 2s infinite ease alternate;}
 
 @keyframes linkedin-bounce {
   from {transform: translateY(0);}
@@ -119,15 +119,11 @@ after it's left the .is-leaving class will automatically be removed
 }
 
 
-#github {animation: github-bounce 2s infinite ease alternate;}
-
 @keyframes github-bounce {
   from {transform: translateY(0);}
   to {transform: translateY(25px);}
 }
 
-
-#email {animation: email-bounce 2s infinite ease alternate;}
 
 @keyframes email-bounce {
   from {transform: translateY(0);}
