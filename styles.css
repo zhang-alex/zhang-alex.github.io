@@ -135,20 +135,23 @@ after it's left the .is-leaving class will automatically be removed
 }
 
 
-
-#Stanford-logo, #bulletin-board, #diploma, #computer {
+/* make sure to add the transition properties and origin adjustments
+to anything that needs to scale on hover */
+#me, #computer {
   transition: transform 0.5s;
   transform-box: fill-box;
   transform-origin: center;
 }
 
-#Stanford-logo:hover {transform: scale(1.2);}
-#bulletin-board:hover {transform: scale(1.1);}
-#diploma:hover {transform: scale(1.2);}
+#me:hover {transform: scale(1.1);}
+/* #bulletin-board:hover {transform: scale(1.1);} */
+/* #diploma:hover {transform: scale(1.2);} */
 #computer:hover {transform: scale(1.1);}
 
-
-#leg {
+/*  --------------------------------------*/
+/* Code to move the leg back and forth */
+/*  --------------------------------------*/
+/* #leg {
   transform-box: fill-box;
   transform-origin: top left;
   animation: leg-moving 34s cubic-bezier(0.51, 0.01, 0.43, 0.99) 3s infinite
@@ -178,9 +181,13 @@ after it's left the .is-leaving class will automatically be removed
     87% {transform: rotate(0deg);}
 
     100% {transform: rotate(0deg);}
-}
+} */
 
-#rocket {
+/*  --------------------------------------*/
+/* Code to move the rocket up and down (kind of disorganized since it's not
+yet clickable)
+/*  --------------------------------------*/
+/* #rocket {
   transform-box: fill-box;
   transform-origin: -50% -40%;
   animation: rocket-moving 4s linear 3s infinite
@@ -197,7 +204,7 @@ after it's left the .is-leaving class will automatically be removed
     100% {
       transform: translateY(-0%);
     }
-}
+} */
 
 
 
