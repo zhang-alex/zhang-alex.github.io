@@ -102,7 +102,7 @@ after it's left the .is-leaving class will automatically be removed
 
  .home {
    opacity: 0;
-   animation: appear-animation 2.5s ease-in 0.5s forwards;
+   animation: appear-animation 2.0s ease-in 0.5s forwards;
  }
 
  @keyframes appear-animation {
@@ -111,19 +111,17 @@ after it's left the .is-leaving class will automatically be removed
   }
  }
 
-#linkedin, #github, #email {animation: linkedin-bounce 2s infinite ease alternate;}
+#linkedin, #github, #email {animation: linkedin-bounce 2s infinite cubic-bezier(0.25, 0.1, 0, 0.98) alternate;}
 
 @keyframes linkedin-bounce {
   from {transform: translateY(0);}
   to {transform: translateY(30px);}
 }
 
-
 @keyframes github-bounce {
   from {transform: translateY(0);}
   to {transform: translateY(25px);}
 }
-
 
 @keyframes email-bounce {
   from {transform: translateY(0);}
@@ -143,6 +141,34 @@ to anything that needs to scale on hover */
 /* #bulletin-board:hover {transform: scale(1.1);} */
 /* #diploma:hover {transform: scale(1.2);} */
 #computer:hover {transform: scale(1.1);}
+
+#left-eye, #right-eye {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: eyes-moving 20s linear infinite;
+}
+
+@keyframes eyes-moving {
+    0% {transform: scaleY(1);}
+    1% {transform: scaleY(0.1);}
+    2% {transform: scaleY(1);}
+
+    20% {transform: scaleY(1);}
+    21% {transform: scaleY(0.1);}
+    22% {transform: scaleY(1);}
+    23% {transform: scaleY(0.1);}
+    24% {transform: scaleY(1);}
+    25% {transform: scaleY(0.1);}
+    26% {transform: scaleY(1);}
+
+    60% {transform: scaleY(1);}
+    61% {transform: scaleY(0.1);}
+    62% {transform: scaleY(1);}
+    63% {transform: scaleY(0.1);}
+    64% {transform: scaleY(1);}
+
+    100% {transform: scaleY(1);}
+}
 
 /*  --------------------------------------*/
 /* Code to move the leg back and forth */

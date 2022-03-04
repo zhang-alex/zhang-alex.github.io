@@ -158,7 +158,6 @@
   text-decoration: none;
 }
 
-
 .home-container {
   width: 100%;
   height: auto;
@@ -191,6 +190,10 @@
   justify-content: space-between;
 }
 .home-heading {
+  text-decoration: none;
+}
+.home-heading1 {
+  align-self: center;
   text-decoration: none;
 }
 .home-section-separator {
@@ -262,7 +265,7 @@
   margin-left: var(--dl-space-space-doubleunit);
   flex-direction: column;
 }
-.home-heading1 {
+.home-heading2 {
   color: #040404;
   margin-bottom: var(--dl-space-space-tripleunit);
 }
@@ -351,10 +354,10 @@
   align-items: center;
   flex-direction: column;
 }
-.home-heading2 {
+.home-heading3 {
   margin-bottom: var(--dl-space-space-tripleunit);
 }
-.home-text17 {
+.home-text16 {
   text-align: center;
 }
 .home-card1 {
@@ -399,10 +402,10 @@
   align-items: center;
   flex-direction: column;
 }
-.home-heading3 {
+.home-heading4 {
   margin-bottom: var(--dl-space-space-tripleunit);
 }
-.home-text21 {
+.home-text20 {
   text-align: center;
 }
 .home-card2 {
@@ -447,10 +450,10 @@
   align-items: center;
   flex-direction: column;
 }
-.home-heading4 {
+.home-heading5 {
   margin-bottom: var(--dl-space-space-tripleunit);
 }
-.home-text22 {
+.home-text21 {
   text-align: center;
 }
 .home-cards-container1 {
@@ -503,10 +506,10 @@
   align-items: center;
   flex-direction: column;
 }
-.home-heading5 {
+.home-heading6 {
   margin-bottom: var(--dl-space-space-tripleunit);
 }
-.home-text41 {
+.home-text40 {
   text-align: center;
 }
 .home-card4 {
@@ -551,10 +554,10 @@
   align-items: center;
   flex-direction: column;
 }
-.home-heading6 {
+.home-heading7 {
   margin-bottom: var(--dl-space-space-tripleunit);
 }
-.home-text43 {
+.home-text42 {
   text-align: center;
 }
 .home-card5 {
@@ -599,10 +602,10 @@
   align-items: center;
   flex-direction: column;
 }
-.home-heading7 {
+.home-heading8 {
   margin-bottom: var(--dl-space-space-tripleunit);
 }
-.home-text45 {
+.home-text44 {
   text-align: center;
 }
 .home-section-separator1 {
@@ -694,6 +697,9 @@
   .home-heading {
     text-align: center;
   }
+  .home-heading1 {
+    text-align: center;
+  }
   .home-hero {
     align-items: center;
     flex-direction: column;
@@ -711,7 +717,7 @@
     align-items: center;
     margin-bottom: var(--dl-space-space-fourunits);
   }
-  .home-heading1 {
+  .home-heading2 {
     text-align: center;
   }
   .home-text03 {
