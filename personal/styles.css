@@ -453,9 +453,9 @@
 .home-heading5 {
   margin-bottom: var(--dl-space-space-tripleunit);
 }
-.home-text21 {
+/* .home-text21 {
   text-align: center;
-}
+} */
 .home-cards-container1 {
   width: 100%;
   display: flex;
@@ -647,7 +647,7 @@
 .home-link1 {
   display: contents;
 }
-.home-image07 {
+.home-image10 {
   width: 50px;
   object-fit: cover;
   margin-left: 64px;
@@ -657,7 +657,7 @@
 .home-link2 {
   display: contents;
 }
-.home-image08 {
+.home-image11 {
   width: 50px;
   object-fit: cover;
   margin-left: 64px;
@@ -667,7 +667,7 @@
 .home-link3 {
   display: contents;
 }
-.home-image09 {
+.home-image12 {
   width: 50px;
   object-fit: cover;
   margin-left: 64px;
