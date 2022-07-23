@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<html lang="en">
+
+<head>
+  <title>Portfolio Page</title>
+  <meta property="og:title" content="Portfolio Page" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <style>
+    html {
+      line-height: 1.15;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+      border-width: 0;
+      border-style: solid;
+    }
+
+    p,
+    li,
+    ul,
+    pre,
+    div,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0;
+      padding: 0;
+    }
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+      font-family: inherit;
+      font-size: 100%;
+      line-height: 1.15;
+      margin: 0;
+    }
+
+    button,
+    select {
+      text-transform: none;
+    }
+
+    button,
+    [type="button"],
+    [type="reset"],
+    [type="submit"] {
+      -webkit-appearance: button;
+    }
+
+    button::-moz-focus-inner,
+    [type="button"]::-moz-focus-inner,
+    [type="reset"]::-moz-focus-inner,
+    [type="submit"]::-moz-focus-inner {
+      border-style: none;
+      padding: 0;
+    }
+
+    button:-moz-focus,
+    [type="button"]:-moz-focus,
+    [type="reset"]:-moz-focus,
+    [type="submit"]:-moz-focus {
+      outline: 1px dotted ButtonText;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: inherit;
+    }
+
+    input {
+      padding: 2px 4px;
+    }
+
+    img {
+      display: block;
+    }
+  </style>
+  <style>
+    html {
+      font-family: Arial;
+      font-size: 16px;
+    }
+
+    body {
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: none;
+      text-transform: none;
+      letter-spacing: normal;
+      line-height: 1.55;
+      color: var(--dl-color-gray-black);
+      background-color: var(--dl-color-gray-white);
+
+    }
+  </style>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body class="professional">
+  <div>
+    <link href="./home.css" rel="stylesheet" />
+
+    <div class="home-container">
+      <div data-role="Header" class="home-navbar-container">
+        <div class="home-navbar">
+          <a href="https://zhang-alex.github.io/home.html" class="home-heading card-Heading">
+            Home
+          </a>
+        </div>
+      </div>
+      <div class="home-section-separator"></div>
+      <div class="home-container1">
+        <div class="home-hero">
+          <div class="home-hero-text-container">
+            <h1 class="home-heading1 section-Heading">
+              <span>I love code.</span>
+            </h1>
+            <span class="home-text01 section-Text">
+              <span>
+                In the past, I&apos;ve worked with languages like Python, C,
+                Java, Git, Bash, and LaTeX, as well as front-end technologies
+                like HTML5, CSS3, Vanilla Javascript, and React.js.
+              </span>
+            </span>
+            <span class="home-text03 section-Text">
+              <span>Keep scrolling to see some of my past projects!</span>
+            </span>
+          </div>
+          <img alt="image" src="public/playground_assets/computer.svg" class="home-image" />
+        </div>
+      </div>
+      <div class="home-selected-projects">
+        <div class="home-heading-container">
+          <h2 class="home-text05 section-Heading">Selected Projects</h2>
+        </div>
+        <div class="home-cards-container">
+          <div class="home-card">
+            <div class="home-icon-container">
+              <div class="home-skill-container">
+                <img src="public/playground_assets/c_programming_language.svg" alt="image" class="home-image01" />
+                <img src="public/playground_assets/bash-200h.png" alt="image" class="home-image02" />
+              </div>
+            </div>
+            <div class="home-content-container">
+              <span class="home-heading2 card-Heading">
+                Explicit-free-list Heap Allocator
+              </span>
+              <span class="home-text06 card-Text">
+                <span>I implemented</span>
+                <span class="home-text08">malloc()</span>
+                <span>,</span>
+                <span class="home-text10">realloc()</span>
+                <span>,</span>
+                <span class="home-text12">free()</span>
+                <span>
+                  heap management functions in C from scratch with
+                  optimization techniques including coalescing of free blocks
+                  and first-fit searching to achieve 93% utilization.
+                </span>
+              </span>
+            </div>
+          </div>
+          <div class="home-card1">
+            <div class="home-icon-container1">
+              <div class="home-skill-container1">
+                <img src="public/playground_assets/python-logo-notext.svg" alt="image" class="home-image03" />
+              </div>
+            </div>
+            <div class="home-content-container1">
+              <span class="home-heading3 card-Heading">
+                Analyzing Netflix dataset to generate movie rating predictions
+              </span>
+              <span class="home-text14 card-Text">
+                I implemented a naive bayes classifier and logistic regression
+                classifier in Python without external libraries to analyze the
+                viewing patterns of 10s of thousands of Netflix users and
+                predict new users’ movie ratings.
+              </span>
+            </div>
+          </div>
+          <div class="home-card2">
+            <div class="home-icon-container2">
+              <div class="home-skill-container2">
+                <img src="public/playground_assets/java-vertical.svg" alt="image" class="home-image04" />
+              </div>
+            </div>
+            <div class="home-content-container2">
+              <span class="home-heading4 card-Heading">PIXEL</span>
+              <span class="home-text15 card-Text">
+                I partially implemented and maintained Git version control for
+                an AI-based application using a Java committee machine to
+                extract critical data from medical documents, collaborating
+                with a former CTO of IBM and a local medical startup.
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="home-cards-container1">
+          <div class="home-card3">
+            <div class="home-icon-container3">
+              <div class="home-skill-container3">
+                <img src="public/playground_assets/html5_logo_and_wordmark.svg" alt="image" class="home-image05" />
+                <img src="public/playground_assets/unofficial_javascript_logo_2.svg" alt="image" class="home-image06" />
+                <img src="public/playground_assets/css3_logo_and_wordmark.svg" alt="image" class="home-image07" />
+              </div>
+            </div>
+            <div class="home-content-container3">
+              <a href="https://github.com/zhang-alex/zhang-alex.github.io" target="_blank" rel="noreferrer noopener" class="home-heading5 card-Heading">
+                Personal Website
+              </a>
+              <span class="home-text16 card-Text">
+                My personal website is written in a mix of HTML, CSS, and
+                vanilla Javascript—no fancy libraries! Click &quot;Personal
+                Website&quot; to access the Github repository.
+              </span>
+            </div>
+          </div>
+<!--           <div class="home-card4">
+            <div class="home-icon-container3">
+              <div class="home-skill-container4">
+                <img src="public/playground_assets/python-logo-notext.svg" alt="image" class="home-image08" />
+                <img src="public/playground_assets/twitter-logo.svg" alt="image" class="home-image09" />
+              </div>
+            </div>
+            <span class="home-heading6 card-Heading">
+              <span>Twitter scraper</span>
+            </span>
+            <span class="home-text18 card-Text">
+              Using packages such as nltk, matplotlib, and numpy, I extracted
+              over a million tweets and performed in-depth statistical
+              analysis on tweet sentiment, number of retweets and retweets per
+              month for various cancer prevention strategies to understand
+              the relationship between effectiveness and public perception.
+            </span>
+          </div> -->
+        </div>
+      </div>
+      <div class="home-section-separator1"></div>
+      <div class="home-footer-container">
+        <div class="home-footer">
+          <span class="anchor">Connect with me! ----- &gt;</span>
+          <div class="home-social-links">
+            <a href="mailto:alxzhang@stanford.edu?subject=" class="home-link1">
+              <img src="public/playground_assets/email.svg" alt="image" class="home-image10" />
+            </a>
+            <a href="https://www.linkedin.com/in/alxzhang/" target="_blank" rel="noreferrer noopener" class="home-link2">
+              <img src="public/playground_assets/linkedin.svg" alt="image" class="home-image11" />
+            </a>
+            <a href="https://github.com/zhang-alex" target="_blank" rel="noreferrer noopener" class="home-link3">
+              <img src="public/playground_assets/github.svg" alt="image" class="home-image12" />
+            </a>
+            <a href="https://www.instagram.com/alex._zhang_/" target="_blank" rel="noreferrer noopener" class="home-link4">
+              <svg viewBox="0 0 877.7142857142857 1024" class="home-icon">
+                <path
+                  d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z">
+                </path>
+              </svg>
+            </a>
+          </div>
+          <div class="home-copyright-container">
+            <svg viewBox="0 0 1024 1024" class="home-icon2">
+              <path
+                d="M512 854q140 0 241-101t101-241-101-241-241-101-241 101-101 241 101 241 241 101zM512 86q176 0 301 125t125 301-125 301-301 125-301-125-125-301 125-301 301-125zM506 390q-80 0-80 116v12q0 116 80 116 30 0 50-17t20-43h76q0 50-44 88-42 36-102 36-80 0-122-48t-42-132v-12q0-82 40-128 48-54 124-54 66 0 104 38 42 42 42 98h-76q0-14-6-26-10-20-14-24-20-20-50-20z">
+              </path>
+            </svg>
+            <span class="anchor"><span>Copyright, 2022</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
+</body>
+
+</html>

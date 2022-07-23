@@ -1,294 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
-<html lang="en">
-
 <head>
-  <title>Portfolio Page</title>
-  <meta property="og:title" content="Portfolio Page" />
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="professional.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="professional.js"></script>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta charset="utf-8" />
-  <meta property="twitter:card" content="summary_large_image" />
-  <style>
-    html {
-      line-height: 1.15;
-    }
-
-    body {
-      margin: 0;
-    }
-
-    * {
-      box-sizing: border-box;
-      border-width: 0;
-      border-style: solid;
-    }
-
-    p,
-    li,
-    ul,
-    pre,
-    div,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      margin: 0;
-      padding: 0;
-    }
-
-    button,
-    input,
-    optgroup,
-    select,
-    textarea {
-      font-family: inherit;
-      font-size: 100%;
-      line-height: 1.15;
-      margin: 0;
-    }
-
-    button,
-    select {
-      text-transform: none;
-    }
-
-    button,
-    [type="button"],
-    [type="reset"],
-    [type="submit"] {
-      -webkit-appearance: button;
-    }
-
-    button::-moz-focus-inner,
-    [type="button"]::-moz-focus-inner,
-    [type="reset"]::-moz-focus-inner,
-    [type="submit"]::-moz-focus-inner {
-      border-style: none;
-      padding: 0;
-    }
-
-    button:-moz-focus,
-    [type="button"]:-moz-focus,
-    [type="reset"]:-moz-focus,
-    [type="submit"]:-moz-focus {
-      outline: 1px dotted ButtonText;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: inherit;
-    }
-
-    input {
-      padding: 2px 4px;
-    }
-
-    img {
-      display: block;
-    }
-  </style>
-  <style>
-    html {
-      font-family: Arial;
-      font-size: 16px;
-    }
-
-    body {
-      font-weight: 400;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: none;
-      letter-spacing: normal;
-      line-height: 1.55;
-      color: var(--dl-color-gray-black);
-      background-color: var(--dl-color-gray-white);
-
-    }
-  </style>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" />
-  <link rel="stylesheet" href="./styles.css" />
+    <!--    ARVO FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
 </head>
+<body>
 
-<body class="professional">
-  <div>
-    <link href="./home.css" rel="stylesheet" />
-
-    <div class="home-container">
-      <div data-role="Header" class="home-navbar-container">
-        <div class="home-navbar">
-          <a href="https://zhang-alex.github.io/home.html" class="home-heading card-Heading">
-            Home
-          </a>
-        </div>
-      </div>
-      <div class="home-section-separator"></div>
-      <div class="home-container1">
-        <div class="home-hero">
-          <div class="home-hero-text-container">
-            <h1 class="home-heading1 section-Heading">
-              <span>I love code.</span>
-            </h1>
-            <span class="home-text01 section-Text">
-              <span>
-                In the past, I&apos;ve worked with languages like Python, C,
-                Java, Git, Bash, and LaTeX, as well as front-end technologies
-                like HTML5, CSS3, Vanilla Javascript, and React.js.
-              </span>
-            </span>
-            <span class="home-text03 section-Text">
-              <span>Keep scrolling to see some of my past projects!</span>
-            </span>
-          </div>
-          <img alt="image" src="public/playground_assets/computer.svg" class="home-image" />
-        </div>
-      </div>
-      <div class="home-selected-projects">
-        <div class="home-heading-container">
-          <h2 class="home-text05 section-Heading">Selected Projects</h2>
-        </div>
-        <div class="home-cards-container">
-          <div class="home-card">
-            <div class="home-icon-container">
-              <div class="home-skill-container">
-                <img src="public/playground_assets/c_programming_language.svg" alt="image" class="home-image01" />
-                <img src="public/playground_assets/bash-200h.png" alt="image" class="home-image02" />
-              </div>
-            </div>
-            <div class="home-content-container">
-              <span class="home-heading2 card-Heading">
-                Explicit-free-list Heap Allocator
-              </span>
-              <span class="home-text06 card-Text">
-                <span>I implemented</span>
-                <span class="home-text08">malloc()</span>
-                <span>,</span>
-                <span class="home-text10">realloc()</span>
-                <span>,</span>
-                <span class="home-text12">free()</span>
-                <span>
-                  heap management functions in C from scratch with
-                  optimization techniques including coalescing of free blocks
-                  and first-fit searching to achieve 93% utilization.
-                </span>
-              </span>
-            </div>
-          </div>
-          <div class="home-card1">
-            <div class="home-icon-container1">
-              <div class="home-skill-container1">
-                <img src="public/playground_assets/python-logo-notext.svg" alt="image" class="home-image03" />
-              </div>
-            </div>
-            <div class="home-content-container1">
-              <span class="home-heading3 card-Heading">
-                Analyzing Netflix dataset to generate movie rating predictions
-              </span>
-              <span class="home-text14 card-Text">
-                I implemented a naive bayes classifier and logistic regression
-                classifier in Python without external libraries to analyze the
-                viewing patterns of 10s of thousands of Netflix users and
-                predict new users’ movie ratings.
-              </span>
-            </div>
-          </div>
-          <div class="home-card2">
-            <div class="home-icon-container2">
-              <div class="home-skill-container2">
-                <img src="public/playground_assets/java-vertical.svg" alt="image" class="home-image04" />
-              </div>
-            </div>
-            <div class="home-content-container2">
-              <span class="home-heading4 card-Heading">PIXEL</span>
-              <span class="home-text15 card-Text">
-                I partially implemented and maintained Git version control for
-                an AI-based application using a Java committee machine to
-                extract critical data from medical documents, collaborating
-                with a former CTO of IBM and a local medical startup.
-              </span>
-            </div>
-          </div>
-        </div>
-        <div class="home-cards-container1">
-          <div class="home-card3">
-            <div class="home-icon-container3">
-              <div class="home-skill-container3">
-                <img src="public/playground_assets/html5_logo_and_wordmark.svg" alt="image" class="home-image05" />
-                <img src="public/playground_assets/unofficial_javascript_logo_2.svg" alt="image" class="home-image06" />
-                <img src="public/playground_assets/css3_logo_and_wordmark.svg" alt="image" class="home-image07" />
-              </div>
-            </div>
-            <div class="home-content-container3">
-              <a href="https://github.com/zhang-alex/zhang-alex.github.io" target="_blank" rel="noreferrer noopener" class="home-heading5 card-Heading">
-                Personal Website
-              </a>
-              <span class="home-text16 card-Text">
-                My personal website is written in a mix of HTML, CSS, and
-                vanilla Javascript—no fancy libraries! Click &quot;Personal
-                Website&quot; to access the Github repository.
-              </span>
-            </div>
-          </div>
-<!--           <div class="home-card4">
-            <div class="home-icon-container3">
-              <div class="home-skill-container4">
-                <img src="public/playground_assets/python-logo-notext.svg" alt="image" class="home-image08" />
-                <img src="public/playground_assets/twitter-logo.svg" alt="image" class="home-image09" />
-              </div>
-            </div>
-            <span class="home-heading6 card-Heading">
-              <span>Twitter scraper</span>
-            </span>
-            <span class="home-text18 card-Text">
-              Using packages such as nltk, matplotlib, and numpy, I extracted
-              over a million tweets and performed in-depth statistical
-              analysis on tweet sentiment, number of retweets and retweets per
-              month for various cancer prevention strategies to understand
-              the relationship between effectiveness and public perception.
-            </span>
-          </div> -->
-        </div>
-      </div>
-      <div class="home-section-separator1"></div>
-      <div class="home-footer-container">
-        <div class="home-footer">
-          <span class="anchor">Connect with me! ----- &gt;</span>
-          <div class="home-social-links">
-            <a href="mailto:alxzhang@stanford.edu?subject=" class="home-link1">
-              <img src="public/playground_assets/email.svg" alt="image" class="home-image10" />
-            </a>
-            <a href="https://www.linkedin.com/in/alxzhang/" target="_blank" rel="noreferrer noopener" class="home-link2">
-              <img src="public/playground_assets/linkedin.svg" alt="image" class="home-image11" />
-            </a>
-            <a href="https://github.com/zhang-alex" target="_blank" rel="noreferrer noopener" class="home-link3">
-              <img src="public/playground_assets/github.svg" alt="image" class="home-image12" />
-            </a>
-            <a href="https://www.instagram.com/alex._zhang_/" target="_blank" rel="noreferrer noopener" class="home-link4">
-              <svg viewBox="0 0 877.7142857142857 1024" class="home-icon">
-                <path
-                  d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z">
-                </path>
-              </svg>
-            </a>
-          </div>
-          <div class="home-copyright-container">
-            <svg viewBox="0 0 1024 1024" class="home-icon2">
-              <path
-                d="M512 854q140 0 241-101t101-241-101-241-241-101-241 101-101 241 101 241 241 101zM512 86q176 0 301 125t125 301-125 301-301 125-301-125-125-301 125-301 301-125zM506 390q-80 0-80 116v12q0 116 80 116 30 0 50-17t20-43h76q0 50-44 88-42 36-102 36-80 0-122-48t-42-132v-12q0-82 40-128 48-54 124-54 66 0 104 38 42 42 42 98h-76q0-14-6-26-10-20-14-24-20-20-50-20z">
-              </path>
-            </svg>
-            <span class="anchor"><span>Copyright, 2022</span></span>
-          </div>
-        </div>
-      </div>
+<div class="i-love-code">
+    <div class="i-love-code-text">
+        <div class="header-text">I love code.</div>
+        <div class="spacer"></div>
+        <div class="section-text">Hi! I'm Alex Zhang, a Computer Science student at Stanford University. </div>
+        <div class="spacer"></div>
+        <div class="section-text">
+            I&apos;ve worked with languages like <b>Python, C,
+            Java, Git, Bash, </b>and <b>LaTeX</b>, as well as web technologies
+        like <b>HTML5, CSS3, Javascript,</b> and Javascript frameworks like <b>JQuery</b> and <b>React.js</b>. </div>
+        <div class="spacer"></div>
+    <div class="section-text">Keep scrolling to see my experiences and projects!</div>
     </div>
-  </div>
-  <script src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
-</body>
+    <div class="i-love-code-computer">
+        <svg width='400px' height=auto viewBox="0 0 481 468" fill="none" xmlns="http://www.w3.org/2000/svg" id="computer" >
+            <path d="M380.86 461.341C380.525 462.814 379.258 464.368 376.397 465.838C366.128 471.112 345.249 464.431 345.249 464.431C345.249 464.431 329.162 461.618 329.162 454.235C329.614 453.917 330.085 453.629 330.572 453.373C334.889 451.027 349.204 445.237 374.584 453.618C376.454 454.221 378.124 455.346 379.409 456.866C379.978 457.441 380.406 458.146 380.658 458.924C380.911 459.702 380.98 460.53 380.86 461.341Z" fill="#3F3D56"/>
+            <path opacity="0.1" d="M380.861 462.054C368.457 467.292 357.401 467.683 346.055 458.997C341.764 455.501 336.568 453.615 331.232 453.617C335.493 451.133 349.619 445.002 374.667 453.877C376.513 454.515 378.161 455.706 379.428 457.316C379.99 457.924 380.413 458.671 380.662 459.495C380.911 460.318 380.979 461.195 380.861 462.054Z" fill="black"/>
+            <path d="M365.39 459.585C368.249 459.585 370.566 459.121 370.566 458.55C370.566 457.978 368.249 457.515 365.39 457.515C362.532 457.515 360.215 457.978 360.215 458.55C360.215 459.121 362.532 459.585 365.39 459.585Z" fill="#F2F2F2"/>
+            <path d="M310.53 464.715V467.866H126.282V465.345L126.535 464.715L131.076 453.374H306.763L310.53 464.715Z" fill="#3F3D56"/>
+            <path opacity="0.1" d="M310.53 465.795V467.866H126.282V466.209L126.535 465.795H310.53Z" fill="black"/>
+            <path d="M463.909 1.59828e-07H16.9051C14.685 -0.000316084 12.4866 0.492623 10.4355 1.45069C8.38431 2.40876 6.52059 3.81318 4.95074 5.58373C3.3809 7.35428 2.13574 9.45628 1.28627 11.7697C0.436808 14.0831 -0.00028026 16.5625 1.34821e-07 19.0665V358.677C-0.000277904 361.181 0.436807 363.661 1.28627 365.974C2.13574 368.288 3.3809 370.39 4.95074 372.16C6.52059 373.931 8.38431 375.335 10.4355 376.293C12.4866 377.251 14.685 377.744 16.9051 377.744H186.592L180.234 423.522C180.234 423.522 143.904 445.29 169.449 445.93C194.994 446.57 315.339 445.93 315.339 445.93C315.339 445.93 338.614 445.93 301.715 422.881L295.735 377.744H463.909C466.129 377.744 468.328 377.251 470.379 376.293C472.43 375.335 474.294 373.931 475.863 372.16C477.433 370.39 478.678 368.288 479.528 365.974C480.377 363.661 480.814 361.181 480.814 358.677V19.0665C480.814 16.5625 480.377 14.0831 479.528 11.7697C478.678 9.45628 477.433 7.35428 475.863 5.58373C474.294 3.81318 472.43 2.40876 470.379 1.45069C468.328 0.492626 466.129 -0.000324059 463.909 1.59828e-07V1.59828e-07Z" fill="#3F3D56"/>
+            <path d="M464.636 20.1677H16.1787V303.156H464.636V20.1677Z" fill="#EEE8D5"/>
+            <path d="M240.407 14.4055C241.974 14.4055 243.245 12.9723 243.245 11.2043C243.245 9.43629 241.974 8.00307 240.407 8.00307C238.839 8.00307 237.568 9.43629 237.568 11.2043C237.568 12.9723 238.839 14.4055 240.407 14.4055Z" fill="white"/>
+            <path d="M240.407 363.979C246.363 363.979 251.192 358.533 251.192 351.814C251.192 345.096 246.363 339.65 240.407 339.65C234.45 339.65 229.621 345.096 229.621 351.814C229.621 358.533 234.45 363.979 240.407 363.979Z" fill="white"/>
+            <path d="M167.253 232.553C167.253 232.553 163.811 234.662 169.648 235.265C176.698 236.168 180.425 236.017 188.208 234.512C188.208 234.512 190.303 235.869 193.147 236.923C175.633 244.454 153.481 236.471 167.253 232.553ZM165.008 222.762C165.008 222.762 161.265 225.625 167.103 226.226C174.735 226.979 180.724 227.13 191.052 225.023C191.052 225.023 192.401 226.53 194.644 227.283C173.541 233.61 149.89 227.884 165.008 222.764V222.762ZM206.32 239.935C206.32 239.935 208.864 242.043 203.475 243.701C193.446 246.714 161.415 247.619 152.434 243.701C149.293 242.344 155.279 240.385 157.224 240.086C159.17 239.634 160.217 239.634 160.217 239.634C156.775 237.223 137.316 244.605 150.338 246.729C186.111 252.605 215.599 244.169 206.318 239.95L206.32 239.935ZM168.899 212.518C168.899 212.518 152.583 216.436 163.06 217.79C167.55 218.391 176.381 218.242 184.614 217.639C191.349 217.037 198.1 215.831 198.1 215.831C198.1 215.831 195.705 216.886 194.059 217.939C177.431 222.312 145.549 220.353 154.68 215.834C162.465 212.068 168.899 212.518 168.899 212.518V212.518ZM198.085 228.938C214.851 220.2 207.066 211.765 201.677 212.82C200.329 213.121 199.731 213.422 199.731 213.422C199.731 213.422 200.18 212.518 201.228 212.219C211.855 208.452 220.238 223.517 197.786 229.391C197.786 229.391 197.936 229.24 198.085 228.939V228.938ZM170.545 252.736C186.71 253.791 211.408 252.135 212.007 244.451C212.007 244.451 210.812 247.463 198.686 249.723C184.916 252.283 167.851 251.982 157.823 250.324C157.823 250.324 159.918 252.132 170.546 252.735L170.545 252.736Z" fill="#4E7896"/>
+            <path d="M187.893 162.808C187.893 162.808 197.173 172.298 179.063 186.606C164.543 198.205 175.767 204.834 179.063 212.364C170.531 204.683 164.396 197.903 168.584 191.576C174.736 182.242 191.648 177.723 187.893 162.808ZM183.104 206.04C187.444 211.011 181.908 215.53 181.908 215.53C181.908 215.53 192.984 209.808 187.896 202.726C183.256 195.947 179.663 192.632 199.122 181.333C199.122 181.333 168.437 189.014 183.107 206.037L183.104 206.04Z" fill="#F58219"/>
+            <path d="M175.38 284.986V270.225C175.38 266.459 173.285 263.898 168.045 263.898C165.052 263.898 162.506 264.651 160.26 265.555L161.008 268.266C162.654 267.665 164.75 267.063 166.995 267.063C169.84 267.063 171.187 268.266 171.187 270.679V272.637H169.69C162.505 272.637 159.211 275.349 159.211 279.732C159.211 283.348 161.457 285.454 165.498 285.454C168.042 285.454 169.988 284.251 171.785 282.743L172.083 285.002H175.378L175.38 284.986ZM171.188 280.166C169.691 281.523 168.047 282.274 166.548 282.274C164.601 282.274 163.406 281.071 163.406 278.958C163.406 276.845 164.601 275.343 169.394 275.343H171.188V280.163V280.166ZM189.449 284.986H184.211L177.924 264.349H182.414L186.307 277.002L187.205 280.769C189.152 275.346 190.647 269.772 191.247 264.349H195.737C194.542 271.127 192.442 278.508 189.451 284.986H189.449ZM213.697 284.986V270.225C213.697 266.459 211.602 263.898 206.362 263.898C203.369 263.898 200.824 264.651 198.577 265.555L199.175 268.266C200.971 267.665 203.067 267.063 205.311 267.063C208.156 267.063 209.503 268.266 209.503 270.679V272.637H208.005C200.821 272.637 197.527 275.349 197.527 279.732C197.527 283.348 199.622 285.454 203.664 285.454C206.358 285.454 208.304 284.251 210.1 282.743L210.399 285.002H213.694L213.697 284.986ZM209.506 280.166C208.008 281.523 206.364 282.274 204.865 282.274C202.919 282.274 201.723 281.071 201.723 278.958C201.723 276.845 202.919 275.343 207.711 275.343H209.507V280.163L209.506 280.166ZM154.575 288.448C153.38 290.256 151.582 291.61 149.337 292.366L147.391 289.955C148.888 289.051 150.384 287.695 150.983 286.491C151.581 285.436 151.731 283.931 151.731 280.465V256.969H156.221V280.166C156.221 284.836 155.772 286.644 154.575 288.451V288.448Z" fill="#4E7896"/>
+            <path d="M253.465 31.4688H259.22V37.1743H264.525V31.4688H270.281V48.7354H264.525V42.9798H259.27V48.7354H253.465V31.4688ZM277.888 37.2243H272.808V31.4688H288.749V37.2243H283.644V48.7354H277.888V37.2243ZM291.276 31.4688H297.307L301.01 37.5496L304.714 31.4688H310.745V48.7354H304.989V40.1772L300.96 46.3831L296.932 40.1772V48.7354H291.276V31.4688ZM313.598 31.4688H319.353V43.0299H327.511V48.7354H313.598" fill="black"/>
+            <path d="M253.265 149.332L245.007 56.6429H335.794L327.536 149.282L290.325 159.592" fill="#E44D26"/>
+            <path d="M290.4 151.709V64.2502H327.511L320.429 143.326" fill="#F16529"/>
+            <path d="M261.873 75.5861H290.4V86.947H274.335L275.386 98.5832H290.4V109.919H264.976L261.873 75.5861ZM265.477 115.625H276.887L277.688 124.708L290.4 128.112V139.973L267.078 133.467" fill="#EBEBEB"/>
+            <path d="M318.828 75.5861H290.351V86.947H317.777L318.828 75.5861ZM316.751 98.5832H290.351V109.944H304.364L303.038 124.708L290.351 128.112V139.923L313.623 133.467" fill="white"/>
+            <path d="M452.925 56.6479L444.734 149.287L407.915 159.592L371.197 149.301L363.015 56.6479H452.925Z" fill="#264DE4"/>
+            <path d="M437.722 143.388L444.721 64.2237H407.97V151.715L437.722 143.388Z" fill="#2965F1"/>
+            <path d="M381.772 98.5875L382.781 109.951H407.97V98.5875H381.772Z" fill="#EBEBEB"/>
+            <path d="M407.971 75.5874H407.932H379.746L380.769 86.951H407.971V75.5874Z" fill="#EBEBEB"/>
+            <path d="M407.97 139.923V128.1L407.92 128.113L395.385 124.696L394.583 115.633H388.492H383.284L384.861 133.475L407.918 139.937L407.97 139.923Z" fill="#EBEBEB"/>
+            <path d="M384.175 31.4688H397.808V37.2243H389.876V42.9798H397.808V48.7354H384.175V31.4688Z" fill="black"/>
+            <path d="M400.534 31.4688H414.167V36.4736H406.235V37.4746H414.167V48.9856H400.534V43.7306H408.466V42.7296H400.534V31.4688Z" fill="black"/>
+            <path d="M416.894 31.4688H430.526V36.4736H422.595V37.4746H430.526V48.9856H416.894V43.7306H424.825V42.7296H416.894V31.4688Z" fill="black"/>
+            <path d="M421.791 109.951L420.485 124.688L407.931 128.109V139.932L431.006 133.475L431.175 131.555L433.82 101.639L434.095 98.5875L436.127 75.5874H407.931V86.951H423.791L422.767 98.5875H407.931V109.951H421.791Z" fill="white"/>
+            <path d="M337.166 176.45H224.777V288.839H337.166V176.45Z" fill="#F7DF1E"/>
+            <path d="M300.274 264.254C302.537 267.95 305.483 270.667 310.692 270.667C315.068 270.667 317.863 268.48 317.863 265.458C317.863 261.837 314.991 260.554 310.175 258.447L307.534 257.314C299.913 254.068 294.85 250 294.85 241.402C294.85 233.481 300.886 227.451 310.317 227.451C317.032 227.451 321.859 229.788 325.338 235.907L317.114 241.188C315.303 237.941 313.35 236.662 310.317 236.662C307.224 236.662 305.263 238.624 305.263 241.188C305.263 244.356 307.226 245.639 311.757 247.601L314.397 248.732C323.37 252.58 328.437 256.503 328.437 265.323C328.437 274.831 320.967 280.04 310.936 280.04C301.128 280.04 294.792 275.366 291.691 269.24L300.274 264.254ZM262.966 265.169C264.625 268.113 266.134 270.601 269.763 270.601C273.233 270.601 275.421 269.244 275.421 263.965V228.054H285.982V264.108C285.982 275.043 279.571 280.021 270.212 280.021C261.756 280.021 256.86 275.645 254.369 270.374L262.966 265.169Z" fill="black"/>
+            <path d="M398.585 243.478C404.339 243.478 409.003 239.131 409.003 233.768C409.003 228.405 404.339 224.058 398.585 224.058C392.831 224.058 388.167 228.405 388.167 233.768C388.167 239.131 392.831 243.478 398.585 243.478Z" fill="#61DAFB"/>
+            <path d="M398.586 253.662C429.459 253.662 454.487 244.755 454.487 233.768C454.487 222.781 429.459 213.874 398.586 213.874C367.712 213.874 342.684 222.781 342.684 233.768C342.684 244.755 367.712 253.662 398.586 253.662Z" stroke="#61DAFB" stroke-width="3"/>
+            <path d="M380.101 243.715C395.537 268.636 416.327 284.385 426.536 278.891C436.745 273.398 432.507 248.742 417.07 223.821C401.633 198.9 380.843 183.151 370.634 188.645C360.426 194.139 364.664 218.794 380.101 243.715Z" stroke="#61DAFB" stroke-width="3"/>
+            <path d="M380.101 223.821C364.664 248.742 360.426 273.398 370.635 278.891C380.844 284.385 401.634 268.636 417.071 243.715C432.507 218.794 436.746 194.139 426.537 188.645C416.328 183.151 395.538 198.9 380.101 223.821Z" stroke="#61DAFB" stroke-width="3"/>
+            <path d="M84.9277 148.609H80.9142V159.07H77.877V129.302H85.2531C92.9547 129.302 96.6428 133.156 96.6428 138.552C96.7512 145.195 92.1954 148.609 84.9277 148.609ZM85.2531 132.275C84.9277 132.275 81.0227 132.275 81.0227 132.275V145.966L85.1446 145.856C90.6768 145.746 93.714 143.544 93.714 138.919C93.714 134.588 90.6768 132.275 85.2531 132.275Z" fill="black"/>
+            <path d="M110.237 158.959L108.502 163.694C106.549 168.98 104.488 170.521 101.559 170.521C99.9324 170.521 98.7392 170.081 97.4375 169.53L98.3053 166.777C99.2815 167.328 100.366 167.768 101.559 167.768C103.187 167.768 104.38 166.888 106.007 162.703L107.417 158.849L99.0646 137.34H102.21L108.936 155.326L115.552 137.34H118.59L110.237 158.959Z" fill="black"/>
+            <path d="M128.497 132.275V159.18H125.46V132.275H115.155V129.412H138.73V132.275C138.694 132.275 128.497 132.275 128.497 132.275Z" fill="black"/>
+            <path d="M147.299 159.73C141.333 159.73 136.994 155.216 136.994 148.278C136.994 141.341 141.55 136.716 147.624 136.716C153.699 136.716 157.929 141.231 157.929 148.168C157.821 155.105 153.265 159.73 147.299 159.73ZM147.408 139.469C142.852 139.469 139.923 143.103 139.923 148.278C139.923 153.564 142.96 157.198 147.516 157.198C152.072 157.198 155.001 153.564 155.001 148.388C155.001 142.993 151.963 139.469 147.408 139.469Z" fill="black"/>
+            <path d="M165.197 159.18H162.269V137.34L165.197 136.68V141.305C166.607 138.552 168.668 136.68 171.489 136.68C172.899 136.68 174.201 137.12 175.285 137.671L174.526 140.424C173.55 139.873 172.465 139.433 171.272 139.433C168.994 139.433 166.933 141.194 165.197 145.048V159.18Z" fill="black"/>
+            <path d="M186.711 159.73C180.203 159.73 176.189 154.995 176.189 148.278C176.189 141.451 180.637 136.716 186.711 136.716C189.315 136.716 191.593 137.377 193.437 138.588L192.677 141.231C191.05 140.13 188.989 139.469 186.711 139.469C182.047 139.469 179.227 142.993 179.227 148.168C179.227 153.454 182.264 156.977 186.82 156.977C188.989 156.977 191.159 156.317 192.786 155.216L193.437 157.968C191.484 159.07 189.206 159.73 186.711 159.73Z" fill="black"/>
+            <path d="M211.371 159.18V145.048C211.371 141.194 209.852 139.543 206.815 139.543C204.32 139.543 201.934 140.864 200.198 142.626V159.18H197.27V127.1L200.198 126.439V140.24C202.476 137.928 205.297 136.827 207.683 136.827C211.805 136.827 214.408 139.579 214.408 144.314V159.216H211.371V159.18Z" fill="black"/>
+            <path d="M60.8104 136.496L58.424 138.919C62.3291 142.883 62.3291 149.269 58.424 153.16C54.519 157.124 48.2276 157.124 44.3949 153.16C40.4898 149.196 40.4898 142.809 44.3949 138.919L50.5778 132.642L51.4456 131.761V127.026L42.1169 136.496C36.9102 141.782 36.9102 150.297 42.1169 155.583C47.3236 160.868 55.7122 160.868 60.8104 155.583C66.0171 150.26 66.0171 141.782 60.8104 136.496Z" fill="#EE4C2C"/>
+            <path d="M57.8813 134.147C57.8813 135.12 57.1043 135.909 56.1457 135.909C55.1872 135.909 54.4102 135.12 54.4102 134.147C54.4102 133.174 55.1872 132.385 56.1457 132.385C57.1043 132.385 57.8813 133.174 57.8813 134.147Z" fill="#EE4C2C"/>
+            <path d="M74.9596 28.0971C50.9934 28.0971 52.49 38.5447 52.49 38.5447L52.5167 49.3683H75.387V52.6181H43.4326C43.4326 52.6181 28.0967 50.8698 28.0967 75.1785C28.0967 99.4872 41.4823 98.6251 41.4823 98.6251H49.4709V87.3449C49.4709 87.3449 49.0402 73.8893 62.6427 73.8893C76.2451 73.8893 85.326 73.8893 85.326 73.8893C85.326 73.8893 98.0704 74.0964 98.0704 61.508C98.0704 48.9195 98.0704 40.6933 98.0704 40.6933C98.0704 40.6933 100.005 28.0971 74.9596 28.0971ZM62.3488 35.3755C64.6242 35.3755 66.4633 37.2243 66.4633 39.5116C66.4633 41.799 64.6242 43.6477 62.3488 43.6477C60.0734 43.6477 58.2343 41.799 58.2343 39.5116C58.2343 37.2243 60.0734 35.3755 62.3488 35.3755Z" fill="url(#paint0_linear_104_204)"/>
+            <path d="M75.6406 122.504C99.6068 122.504 98.1102 112.056 98.1102 112.056L98.0835 101.232H75.2131V97.9826H107.168C107.168 97.9826 122.503 99.7309 122.503 75.4222C122.503 51.1135 109.118 51.9755 109.118 51.9755H101.129V63.2557C101.129 63.2557 101.56 76.7113 87.9575 76.7113C74.355 76.7113 65.2741 76.7113 65.2741 76.7113C65.2741 76.7113 52.5298 76.5043 52.5298 89.0927C52.5298 101.681 52.5298 109.907 52.5298 109.907C52.5298 109.907 50.5948 122.504 75.6406 122.504ZM88.2514 115.225C85.9759 115.225 84.1368 113.376 84.1368 111.089C84.1368 108.802 85.9759 106.953 88.2514 106.953C90.5268 106.953 92.3659 108.802 92.3659 111.089C92.3659 113.376 90.5268 115.225 88.2514 115.225Z" fill="url(#paint1_linear_104_204)"/>
+            <path d="M230.843 71.607L189.134 29.8991C186.732 27.4965 182.837 27.4965 180.433 29.8991L171.773 38.5615L182.759 49.5476C185.312 48.6846 188.239 49.2637 190.274 51.2994C192.321 53.3475 192.895 56.3001 192.01 58.8629L202.6 69.4518C205.163 68.5681 208.117 69.1399 210.163 71.189C213.022 74.0481 213.022 78.6808 210.163 81.5419C207.302 84.402 202.67 84.402 199.807 81.5419C197.658 79.3898 197.125 76.2293 198.216 73.5802L188.339 63.7045V89.6928C189.036 90.038 189.694 90.4975 190.274 91.0776C193.133 93.9367 193.133 98.5694 190.274 101.432C187.415 104.29 182.779 104.29 179.922 101.432C177.063 98.5684 177.063 93.9356 179.922 91.0776C180.629 90.3717 181.448 89.8373 182.321 89.4797V63.2492C181.448 62.8915 180.631 62.3624 179.922 61.6512C177.757 59.4867 177.236 56.3074 178.346 53.648L167.516 42.8158L138.916 71.4136C136.514 73.8183 136.514 77.7139 138.916 80.1165L180.627 121.825C183.029 124.228 186.923 124.228 189.328 121.825L230.843 80.3099C233.245 77.9073 233.245 74.0096 230.843 71.607Z" fill="#F05133"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M76.6813 176.138C78.6092 175.057 80.9828 175.057 82.9079 176.138C92.4337 181.479 121.099 197.556 130.628 202.897C132.556 203.975 133.742 205.972 133.742 208.134C133.742 218.816 133.742 250.967 133.742 261.649C133.742 263.811 132.556 265.808 130.628 266.888C121.102 272.229 92.4365 288.306 82.9079 293.647C80.98 294.728 78.6063 294.728 76.6813 293.647C67.1555 288.306 38.4901 272.229 28.9615 266.888C27.0364 265.808 25.8496 263.813 25.8496 261.652C25.8496 250.97 25.8496 218.819 25.8496 208.136C25.8496 205.975 27.0364 203.978 28.9643 202.897C38.4873 197.556 67.1583 181.479 76.6813 176.138V176.138Z" fill="#004482"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M26.7128 264.403C25.9575 263.394 25.8496 262.435 25.8496 261.144C25.8496 250.525 25.8496 218.558 25.8496 207.935C25.8496 205.785 27.0336 203.799 28.9558 202.727C38.4475 197.417 67.0164 181.434 76.5081 176.121C78.4303 175.046 81.0339 175.069 82.9561 176.144C92.4478 181.454 120.92 197.301 130.412 202.611C131.178 203.042 131.763 203.561 132.286 204.245L26.7128 264.403Z" fill="#659AD2"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M79.7959 195.182C101.735 195.182 119.546 212.975 119.546 234.893C119.546 256.81 101.735 274.603 79.7959 274.603C57.8567 274.603 40.0459 256.81 40.0459 234.893C40.0459 212.975 57.8567 195.182 79.7959 195.182V195.182ZM79.7959 215.038C90.764 215.038 99.6708 223.933 99.6708 234.893C99.6708 245.85 90.764 254.748 79.7959 254.748C68.8277 254.748 59.9209 245.85 59.9209 234.893C59.9209 223.933 68.8249 215.038 79.7959 215.038V215.038Z" fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M132.28 204.273C133.745 205.643 133.717 207.708 133.717 209.333C133.717 220.098 133.626 250.715 133.743 261.479C133.754 262.602 133.382 263.785 132.826 264.676L78.6406 234.893L132.28 204.273Z" fill="#00599C"/>
+            <defs>
+                <linearGradient id="paint0_linear_104_204" x1="37.1693" y1="36.3491" x2="84.0951" y2="83.1866" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#387EB8"/>
+                    <stop offset="1" stop-color="#366994"/>
+                </linearGradient>
+                <linearGradient id="paint1_linear_104_204" x1="65.886" y1="66.3009" x2="116.272" y2="114.322" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#FFE052"/>
+                    <stop offset="1" stop-color="#FFC331"/>
+                </linearGradient>
+            </defs>
+        </svg>
 
+
+
+    </div>
+
+</div>
+<div class="overall-timeline">
+    <!--    Section for the title-->
+    <div class="timeline-header-container">
+        <div class="timeline-header"><u>Experience</u></div>
+    </div>
+
+    <!--    Main body of the timeline -->
+    <section class="timeline-body">
+        <div class="ag-format-container">
+            <div class="js-timeline ag-timeline">
+                <!-- Needed so JS knows where to place the timeline -->
+                <div class="js-timeline_line actual-timeline_line">
+                    <div class="js-timeline_line-progress ag-timeline_line-progress"></div>
+                </div>
+                <div class="list-of-timeline-items">
+                    <div class="timeline_item js-timeline_item">
+                        <div class="timeline-circle-and-meta-text">
+                            <div class="js-timeline-card_point-box text-within-circle-container">
+                                <div class="text-within-circle">
+                                    <img class='logo' src="./stanford.png" alt="stanford logo">
+                                </div>
+                            </div>
+                            <div class="meta-container">
+                                <div class="company">The Openproof Group</div>
+                                <div class="time-range">3.2022 - Present</div>
+                            </div>
+                        </div>
+                        <div class="timeline-text-and-arrow-container">
+                            <div class="timeline-text-container">
+                                <div class="ag-timeline-card_img-box">
+                                    <img src="./openproof_skills.png" class="ag-timeline-card_img" width="640" />
+                                </div>
+                                <div class="ag-timeline-card_info">
+                                    <div class="ag-timeline-card_title">3.2022 - Present</div>
+                                    <div class="ag-timeline-card_desc">
+                                        I architected and implemented undo-redo infrastructure (HTML, CSS, JS)
+                                        with automatic action consolidation and file-specific memory, which serves 4
+                                        education courseware applications used by universities in 5+ countries.
+                                    </div>
+                                    <div class="spacer"></div>
+                                    <div class="ag-timeline-card_desc">
+                                        Additionally, I integrated full support for German, Japanese, and Portuguese within
+                                        all undo components, and streamlined our 800000+ -line codebase to reduce redundant code
+                                        and align with the Model-View-Controller paradigm.
+                                    </div>
+
+                                </div>
+                            </div>
+                             <div class="arrow"></div>
+                        </div>
+                    </div>
+
+                    <div class="timeline_item js-timeline_item">
+                        <div class="timeline-circle-and-meta-text">
+                            <div class="meta-container">
+                                <div class="company">Google</div>
+                                <div class="time-range">3.2022 - 6.2022</div>
+                            </div>
+                            <div class="js-timeline-card_point-box text-within-circle-container">
+                                <div class="text-within-circle">
+                                    <img class='logo' src="./google.png" alt="google logo">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-text-and-arrow-container">
+                            <div class="timeline-text-container">
+                                <div class="ag-timeline-card_img-box">
+                                    <img src="./google_skills.png" class="ag-timeline-card_img" width="640" />
+                                </div>
+                                <div class="ag-timeline-card_info">
+                                    <div class="ag-timeline-card_title">3.2022 - 6.2022</div>
+                                    <div class="ag-timeline-card_desc">
+                                        Working with the Google Blueshift research team, I curated, refined, and
+                                        completed Python3 translation of 100s of STEM problems used to train
+                                        and evaluate the <i>Minerva</i> deep learning model for education, contributing
+                                        to Minerva’s double-digit accuracy improvements over state-of-the-art models
+                                        on graduate-level quantitative tasks.
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="arrow"></div>
+                        </div>
+                    </div>
+
+                    <div class="timeline_item js-timeline_item">
+                        <div class="timeline-circle-and-meta-text">
+                            <div class="js-timeline-card_point-box text-within-circle-container">
+                                <div class="text-within-circle">
+                                    <img src="./pixel.png" alt="pixel logo" class='logo'>
+                                </div>
+                            </div>
+                            <div class="meta-container">
+                                <div class="company">Pixel</div>
+                                <div class="time-range">2016 - 2017</div>
+                            </div>
+                        </div>
+                        <div class="timeline-text-and-arrow-container">
+                            <div class="timeline-text-container">
+                                <div class="ag-timeline-card_img-box">
+                                    <img src="./pixel_skills.png" class="ag-timeline-card_img" width="640" />
+                                </div>
+                                <div class="ag-timeline-card_info">
+                                    <div class="ag-timeline-card_title">Season 11</div>
+                                    <div class="ag-timeline-card_desc">
+                                        I partially implemented and maintained Git version control for an AI-based application using a
+                                        Java committee machine to extract critical data from medical documents, in collaboration with a former CTO of IBM and a local medical startup.
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="arrow"></div>
+                        </div>
+                    </div>
+<!--                    <div class="timeline_item js-timeline_item">-->
+<!--                        <div class="timeline-circle-and-meta-text">-->
+<!--                            <div class="js-timeline-card_point-box text-within-circle-container">-->
+<!--                                <div class="text-within-circle">-->
+<!--                                    <img src="./pixel.png" alt="pixel logo" class='logo'>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="meta-container">-->
+<!--                                <div class="company">Pixel</div>-->
+<!--                                <div class="time-range">2016 - 2017</div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="timeline-text-and-arrow-container">-->
+<!--                            <div class="timeline-text-container">-->
+<!--                                <div class="ag-timeline-card_img-box">-->
+<!--                                    <img src="./pixel_skills.png" class="ag-timeline-card_img" width="640" />-->
+<!--                                </div>-->
+<!--                                <div class="ag-timeline-card_info">-->
+<!--                                    <div class="ag-timeline-card_title">Season 11</div>-->
+<!--                                    <div class="ag-timeline-card_desc">-->
+<!--                                        Aenean imperdiet. Etiam ultricies-->
+<!--                                        nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.-->
+<!--                                        Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet-->
+<!--                                        adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar,-->
+<!--                                        hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae-->
+<!--                                        sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget-->
+<!--                                        eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="arrow"></div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<div class="footer">
+    <div class="connect-text">Connect with me: </div>
+    <div class="home-social-links">
+        <a href="./Alex_Zhang_Resume.pdf" target="_blank" class="connect">
+            Resume (opens in a new tab)
+        </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="mailto:alxzhang@stanford.edu?subject=" target="_blank" rel="noreferrer noopener" class="connect">
+            Email
+        </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://www.linkedin.com/in/alxzhang/" target="_blank" rel="noreferrer noopener" class="connect">
+            LinkedIn
+        </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://github.com/zhang-alex" target="_blank" rel="noreferrer noopener" class="connect">
+            Github
+        </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://www.instagram.com/alex._zhang_/" target="_blank" rel="noreferrer noopener" class="connect">
+            Instagram
+        </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    </div>
+
+
+
+</div>
+<div class="spacer"></div>
+</body>
 </html>

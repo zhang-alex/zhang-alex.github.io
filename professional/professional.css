@@ -1,0 +1,495 @@
+body {
+    background-color: var(--base3);
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: 'ESL Legend';
+    src: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Light.eot);
+    src: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Light.eot#iefix) format("embedded-opentype"),
+    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Light.woff2) format("woff2"),
+    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Light.woff) format("woff"),
+    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Light.ttf) format("truetype"),
+    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Light.svg#eicon) format("svg");
+    font-style: normal;
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'ESL Legend';
+    src: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Regular.eot);
+    src: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Regular.eot#iefix) format("embedded-opentype"),
+    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Regular.woff2) format("woff2"),
+    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Regular.woff) format("woff"),
+    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Regular.ttf) format("truetype"),
+    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Regular.svg#eicon) format("svg");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'ESL Legend';
+    src: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Bold.eot);
+    src: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Bold.eot#iefix) format("embedded-opentype"),
+    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Bold.woff2) format("woff2"),
+    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Bold.woff) format("woff"),
+    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Bold.ttf) format("truetype"),
+    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Bold.svg#eicon) format("svg");
+    font-style: normal;
+    font-weight: bold;
+}
+
+body {
+    font-family: 'Arvo', serif;
+}
+
+.i-love-code {
+    margin: 8% 10%;
+    display: flex;
+}
+
+.i-love-code-text {
+    margin-right: 10%;
+}
+
+.header-text {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.section-text {
+    font-size: 2rem;
+}
+
+.connect-text {
+    font-size: 3rem;
+}
+
+.connect {
+    font-size: 2rem;
+}
+
+a {
+    color: black    ;
+}
+
+a:link { text-decoration: none; }
+
+a:visited { text-decoration: none; }
+
+a:hover { text-decoration: none; }
+
+a:active { text-decoration: none; }
+
+.spacer {
+    height: 2rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+#computer {
+    object-fit: cover;
+    display: block;
+}
+
+.ag-format-container {
+    width: 1160px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.overall-timeline {
+    padding-top: 0px;
+    margin-left: 100px;
+}
+
+.timeline-header-container {
+    padding: 0 0 50px;
+
+    text-align: center;
+}
+
+.ag-timeline_tagline {
+    font-size: 40px;
+    color: rgb(84, 89, 95);
+}
+
+.ag-timeline-card_desc {
+    font-size: 1rem;
+    text-align: left;
+}
+
+.timeline-header {
+    font-size: 60px;
+}
+
+.timeline_item {
+    margin: 0 0 100px;
+    position: relative;
+}
+
+.timeline_item:nth-child(2n) {
+    text-align: right;
+}
+
+.ag-timeline {
+    display: inline-block;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+
+    position: relative;
+}
+.actual-timeline_line {
+    width: 8px;
+    background-color: var(--base2);
+    position: absolute;
+    top: 4px;
+    left: 50%;
+    bottom: 0;
+
+    overflow: hidden;
+
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.ag-timeline_line-progress {
+    width: 100%;
+    height: 20%;
+    background-color: var(--base02);
+}
+
+.js-timeline_line-progress::after {
+    content: 'asdfasdfasdf';
+    width: 5px;
+    height: 5px;
+    background-color: black;
+}
+
+/* every other circle */
+.timeline-circle-and-meta-text {
+    padding: 0 0 20px 43.5%;
+}
+/* every other circle */
+.timeline_item:nth-child(2n) .timeline-circle-and-meta-text {
+    padding: 0 43.5% 20px 0;
+}
+.text-within-circle-container {
+    display: inline-block;
+    margin: 0 14px 0 -28px;
+}
+.timeline_item:nth-child(2n) .text-within-circle-container {
+    margin: 0 -28px 0 14px;
+}
+
+.text-within-circle {
+    height: 200px;
+    line-height: 200px;
+    width: 200px;
+    border: 3px solid var(--base2);
+    background-color: var(--base2);
+
+    text-align: center;
+    font-family: 'ESL Legend', sans-serif;
+    font-size: 20px;
+    color: var(--base02);
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.js-ag-active .text-within-circle {
+    color: var(--base2);
+    background-color: var(--base02);
+    border: 3px solid var(--base03)
+}
+
+.meta-container {
+    position: absolute;
+    display: inline-block;
+    margin-top: 50px;
+}
+
+.timeline_item:nth-child(2n+1) .meta-container {
+    margin-left: 25px;
+}
+
+.timeline_item:nth-child(2n) .meta-container {
+    margin-left: -200px;
+}
+
+.company {
+    font-family: 'ESL Legend', sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+    color: var(--base01);
+}
+
+.time-range {
+    font-family: 'ESL Legend', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--base1);
+}
+
+.timeline_item:nth-child(2n) .meta-container .time-range {
+    text-align: right;
+}
+
+.timeline-text-and-arrow-container {
+    display: inline-block;
+    width: 45%;
+    margin-top: -175px;
+
+    opacity: 0;
+
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+
+    -webkit-box-shadow: 0 0 0 0 rgba(0,0,0,.5);
+    -moz-box-shadow: 0 0 0 0 rgba(0,0,0,.5);
+    -o-box-shadow: 0 0 0 0 rgba(0,0,0,.5);
+    box-shadow: 0 0 0 0 rgba(0,0,0,.5);
+
+    -webkit-transition: -webkit-transform .5s, opacity .5s;
+    -moz-transition: -moz-transform .5s, opacity .5s;
+    -o-transition: -o-transform .5s, opacity .5s;
+    transition: transform .5s, opacity .5s;
+
+    position: relative;
+}
+.timeline_item:nth-child(2n+1) .timeline-text-and-arrow-container {
+    -webkit-transform: translateX(-200%);
+    -moz-transform: translateX(-200%);
+    -ms-transform: translateX(-200%);
+    -o-transform: translateX(-200%);
+    transform: translateX(-200%);
+}
+.timeline_item:nth-child(2n) .timeline-text-and-arrow-container {
+    -webkit-transform: translateX(200%);
+    -moz-transform: translateX(200%);
+    -ms-transform: translateX(200%);
+    -o-transform: translateX(200%);
+    transform: translateX(200%);
+}
+.js-ag-active.timeline_item:nth-child(2n+1) .timeline-text-and-arrow-container {
+    opacity: 1;
+    margin-left: -100px;
+
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+
+
+.js-ag-active.timeline_item:nth-child(2n) .timeline-text-and-arrow-container {
+    opacity: 1;
+    margin-right: -100px;
+
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+
+
+.arrow {
+    height: 18px;
+    width: 18px;
+    margin-top: 20px;
+    /*background-color: #282828;*/
+
+    z-index: -1;
+    position: absolute;
+
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.timeline_item:nth-child(2n+1) .arrow {
+    margin-left: calc(-18px / 2);
+    margin-right: calc(-18px / 2);
+
+    border-top: var(--base02) 5px solid;
+    border-right: var(--base02) 5px solid;
+
+    top: 25px;
+    right: -25px;
+}
+.timeline_item:nth-child(2n) .arrow {
+    margin-left: -10px;
+
+    border-left: var(--base02) 5px solid;
+    border-bottom: var(--base02) 5px solid;
+
+    bottom: 230px;
+    right: 535px;
+}
+
+.timeline_item:nth-child(2n+1) .timeline-text-container {
+    border: var(--base02) 4px solid;
+    border-radius: 2em 0 2em 2em;
+}
+
+.timeline_item:nth-child(2n) .timeline-text-container {
+    border: var(--base02) 4px solid;
+    border-radius: 0 2em 2em 2em;
+}
+
+.ag-timeline-card_img-box {
+    background: inherit;
+}
+
+.ag-timeline-card_img {
+    padding-top: 1em;
+    width: 100%;
+}
+.ag-timeline-card_info {
+    padding: 1em 1em;
+}
+.ag-timeline-card_title {
+    display: none;
+    margin: 10px 0 0;
+    font-family: 'ESL Legend', sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    color: #FF0;
+}
+.ag-timeline-card_desc {
+    line-height: 1.45;
+    font-size: 16px;
+    color: var(--base02);
+}
+
+.logo {
+    height: 70%;
+    padding: 15% 0 0 0;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+:root {
+    --base03: #002b36;
+    --base02: #073642;
+    --base01: #586e75;
+    --base00: #657b83;
+    --base0: #839496;
+    --base1: #93a1a1;
+    --base2: #eee8d5;
+    --base3: #fdf6e3;
+}
+
+
+/*@media only screen and (max-width: 979px) {*/
+/*    .actual-timeline_line {*/
+/*        left: 30px;*/
+/*    }*/
+
+/*    .timeline_item:nth-child(2n) {*/
+/*        text-align: left;*/
+/*    }*/
+
+/*    .timeline-circle-and-meta-text,*/
+/*    .timeline_item:nth-child(2n) .timeline-circle-and-meta-text {*/
+/*        padding: 0 0 20px;*/
+/*    }*/
+/*    .meta-container {*/
+/*        display: none;*/
+/*    }*/
+/*    .text-within-circle-container,*/
+/*    .timeline_item:nth-child(2n) .text-within-circle-container {*/
+/*        margin: 0 0 0 8px;*/
+/*    }*/
+/*    .text-within-circle {*/
+/*        height: 40px;*/
+/*        line-height: 40px;*/
+/*        width: 40px;*/
+/*    }*/
+/*    .timeline-text-and-arrow-container {*/
+/*        width: auto;*/
+/*        margin: -65px 0 0 75px*/
+/*    }*/
+/*    .timeline_item:nth-child(2n+1) .timeline-text-and-arrow-container,*/
+/*    .timeline_item:nth-child(2n) .timeline-text-and-arrow-container {*/
+/*        -webkit-transform: translateX(200%);*/
+/*        -moz-transform: translateX(200%);*/
+/*        -ms-transform: translateX(200%);*/
+/*        -o-transform: translateX(200%);*/
+/*        transform: translateX(200%);*/
+/*    }*/
+/*    .timeline_item:nth-child(2n+1) .arrow {*/
+/*        right: auto;*/
+/*        left: 0;*/
+/*    }*/
+/*    .ag-timeline-card_title {*/
+/*        display: block;*/
+/*    }*/
+/*    .arrow {*/
+/*        margin-top: 12px;*/
+/*    }*/
+/*}*/
+
+/*@media only screen and (max-width: 767px) {*/
+/*    .ag-format-container {*/
+/*        width: 96%;*/
+/*    }*/
+
+/*    .ag-timeline-card_img {*/
+/*        height: auto;*/
+/*        width: auto;*/
+/*    }*/
+/*}*/
+
+/*@media only screen and (max-width: 639px) {*/
+/*    .timeline-header {*/
+/*        font-size: 60px;*/
+/*    }*/
+
+/*    .ag-timeline-card_info {*/
+/*        padding: 10px 15px;*/
+/*    }*/
+/*    .ag-timeline-card_desc {*/
+/*        font-size: 14px;*/
+/*    }*/
+/*}*/
+
+/*@media only screen and (max-width: 479px) {*/
+
+/*}*/
+
+/*@media (min-width: 768px) and (max-width: 979px) {*/
+/*    .ag-format-container {*/
+/*        width: 750px;*/
+/*    }*/
+
+/*}*/
+
+/*@media (min-width: 980px) and (max-width: 1361px) {*/
+/*    .ag-format-container {*/
+/*        width: 960px;*/
+/*    }*/
+
+/*    !* every other circle *!*/
+/*    .timeline-circle-and-meta-text {*/
+/*        padding: 0 0 20px 47.5%;*/
+/*    }*/
+/*    !* every other circle *!*/
+/*    .timeline_item:nth-child(2n) .timeline-circle-and-meta-text {*/
+/*        padding: 0 47.5% 20px 0;*/
+/*    }*/
+
+/*}*/
