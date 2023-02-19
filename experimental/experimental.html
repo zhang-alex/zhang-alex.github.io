@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <title>Experimental Website</title>
     <link rel="stylesheet" href="experimental.css">
+    <script src="database.js"></script>
+    <script src="experimental.js"></script>
 </head>
-<body>
+<body onload="main()">
 <header>
     <h1>Experimental Website</h1>
 </header>
@@ -18,18 +20,19 @@
     <div id="mid-col" class="col">
         <div class="mid-col-content">
             <h2 class="mid-col-title">Can You Name this Famous Civil Rights Icon?</h2>
-<!--            ADD A DIV AND SET JUSTIFY CONTENT: https://blog.hubspot.com/website/center-an-image-in-html#:~:text=Step%201%3A%20Wrap%20the%20image,to%20a%20fixed%20length%20value.-->
-            <img class="subject-icon" src="https://upload.wikimedia.org/wikipedia/commons/6/63/Wikipedia-logo.png" alt="Random Wikipedia Image">
+            <div class="subject-icon-container">
+<!--                <img class="subject-icon" src="https://upload.wikimedia.org/wikipedia/commons/6/63/Wikipedia-logo.png" alt="Random Wikipedia Image">-->
+            </div>
             <div class="ad">
                 <!-- Google AdSense Ad -->
             </div>
-            <div class="btn-group">
-                <button class="button">Button</button>
-                <button class="button">Button</button>
-                <button class="button">Button</button>
-                <button class="button">Button</button>
-            </div>
-            <div class="ad">
+<!--            <div class="btn-group">-->
+<!--                <button class="button">Button</button>-->
+<!--                <button class="button">Button</button>-->
+<!--                <button class="button">Button</button>-->
+<!--                <button class="button">Button</button>-->
+<!--            </div>-->
+            <div class="ad" id="buttons-before">
                 <!-- Google AdSense Ad -->
             </div>
             <div class="ad">
