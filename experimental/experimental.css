@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'ESL Legend', sans-serif;
+}
+
+hr {
+    height: .2em;
+    background-color: black;
+}
+
+body {
+    background-color: #EEEEEE;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 1em;
+    margin: 0;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.col {
+    margin: 2em 1em;
+    border-radius: 5px;
+}
+
+#left-col {
+    float: left;
+    width: 15%;
+    background-color: white;
+    padding: 1em;
+}
+
+#left-col > * {
+    margin: .5em;
+}
+
+.left-col-title {
+    margin-top: 0;
+    text-align: center;
+}
+
+
+#mid-col {
+    float: left;
+    width: 50%;
+    background-color: white;
+    padding: 5em;
+}
+
+.mid-col-content {
+    border-radius: 5px;
+}
+
+.mid-col-title {
+    margin-top: 0;
+    text-align: center;
+}
+
+.subject-icon {
+    align-content: center;
+}
+
+.btn-group .button {
+    background-color: #4CAF50; /* Green */
+    border: 1px solid green;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    width: 150px;
+    display: block;
+}
+
+.btn-group .button:not(:last-child) {
+    border-bottom: none; /* Prevent double borders */
+}
+
+.btn-group .button:hover {
+    background-color: #3e8e41;
+}
+
+.answer {
+    margin-bottom: 1em;
+}
+
+#right-col {
+    float: left;
+    width: 15%;
+    background-color: white;
+    padding: 1em;
+}
+
+.continue {
+    display: block;
+    margin: 2em auto;
+    padding: 1em 2em;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+}
+
+.ad {
+    margin-bottom: 0
+}
