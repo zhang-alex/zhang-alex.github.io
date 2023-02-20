@@ -49,6 +49,11 @@ h1 {
     text-align: center;
 }
 
+.fact-container {
+    padding: 0.5em;
+    text-align: left;
+}
+
 
 #mid-col {
     float: left;
