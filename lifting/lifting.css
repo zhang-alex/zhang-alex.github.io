@@ -47,7 +47,7 @@ h1 {
 }
 
 #modal-content {
-    padding: 1rem;
+    padding: 0;
 }
 
 .modal-open {
@@ -107,8 +107,6 @@ ul {
 }
 
 iframe {
-    height: 50%;
-    width: 50%;
     position: fixed;
     display: inline;
     controls: "true";
