@@ -131,7 +131,7 @@ after it's left the .is-leaving class will automatically be removed
 
 /* make sure to add the transition properties and origin adjustments
 to anything that needs to scale on hover */
-#me, #computer {
+#me, #computer, #weight {
   transition: transform 0.5s;
   transform-box: fill-box;
   transform-origin: center;
@@ -141,6 +141,7 @@ to anything that needs to scale on hover */
 /* #bulletin-board:hover {transform: scale(1.1);} */
 /* #diploma:hover {transform: scale(1.2);} */
 #computer:hover {transform: scale(1.1);}
+#weight:hover {transform: scale(1.1);}
 
 #left-eye, #right-eye {
   transform-box: fill-box;
