@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Lifts</title>
+    <link rel="stylesheet" href="lifting.css">
+</head>
+<body>
+<header>
+    <h1>My Lifts</h1>
+</header>
+<main>
+    <ul class="lift-list">
+        <li><button class="lift-button" id="squat-button">Squat</button></li>
+        <li><button class="lift-button" id="bench-press-button">Bench Press</button></li>
+        <li><button class="lift-button" id="paused-bench-button">Paused Bench</button></li>
+        <li><button class="lift-button" id="conventional-deadlift-button">Conventional Deadlift</button></li>
+        <li><button class="lift-button" id="sumo-deadlift-button">Sumo Deadlift</button></li>
+        <li><button class="lift-button" id="overhead-press-button">Overhead Press</button></li>
+        <li><button class="lift-button" id="leg-press-button">Leg Press</button></li>
+
+    </ul>
+</main>
+<div class="modal" id="squat-modal">
+    <div id="modal-header">
+        <h2>Modal Title</h2>
+        <button id="close-modal">&times;</button>
+    </div>
+    <div id="modal-content">
+        <video width="20%" height="100%" controls="true">
+            <source src="videos/squat.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
+
+<div id="modal-background"></div>
+<script src="lifting.js"></script>
+</body>
+</html>
