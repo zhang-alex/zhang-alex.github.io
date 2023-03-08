@@ -1,7 +1,7 @@
 
-const closeModalButton = document.getElementById('close-modal');
+
 const modalBackground = document.getElementById('modal-background');
-const modal = document.getElementById('modal');
+const modal = document.querySelector('.modal');
 const body = document.querySelector('body');
 
 let openModal = null;
@@ -21,8 +21,10 @@ document.getElementById('squat-button').addEventListener('click', () => {
     render_modal(this_str);
 });
 
+
+
 function render_modal(this_str) {
-    render_modal_header(this_str);
+    // render_modal_header(this_str);
     render_body(this_str);
 }
 
@@ -32,25 +34,21 @@ function render_modal_header(this_str) {
     const header = createMyElement('div', {id: "modal-header"}, [title, close_button])
 
     document.querySelector(".modal").appendChild(header);
+
+    const closeModalButton = document.getElementById('close-modal');
+    closeModalButton.addEventListener('click', () => {
+        closeModal();
+    });
 }
 
 function render_body(this_str) {
-    // <div id="modal-content">
-    //     <video width="100%" height="100%" controls>
-    //         <source src= type="video/mp4">
-    //             Your browser does not support the video tag.
-    //     </video>
-    // </div>
     const source = createMyElement('source', {src: `videos/${this_str}.mp4`, type: "video/mp4"})
-    const video = createMyElement('video', {width: "100%", height: "100%", controls: "true"}, source)
+    const video = createMyElement('video', source)
+    video.controls = true;
     const body = createMyElement('div', {id: "modal-content"}, video);
     document.querySelector(".modal").appendChild(body);
 }
 
-
-closeModalButton.addEventListener('click', () => {
-    closeModal();
-});
 
 modalBackground.addEventListener('click', () => {
     closeModal();
