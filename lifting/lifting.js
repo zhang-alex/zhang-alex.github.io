@@ -29,7 +29,7 @@ function lift_listener(this_str) {
 
 
 function render_modal(this_str) {
-    render_modal_header(this_str);
+    // render_modal_header(this_str);
     render_body(this_str);
 }
 
