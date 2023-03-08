@@ -42,9 +42,12 @@ function render_modal_header(this_str) {
 }
 
 function render_body(this_str) {
-    const source = createMyElement('source', {src: `videos/${this_str}.mp4`, type: "video/mp4"})
-    const video = createMyElement('video', source)
-    video.controls = true;
+
+
+    // const source = createMyElement('source', {src: `videos/${this_str}.mp4`, type: "video/mp4"})
+    // const video = createMyElement('video', source)
+    // video.controls = true;
+    const video = createMyElement('iframe', {src: "https://youtu.be/f7DyEnjTKFg"});
     const body = createMyElement('div', {id: "modal-content"}, video);
     document.querySelector(".modal").appendChild(body);
 }

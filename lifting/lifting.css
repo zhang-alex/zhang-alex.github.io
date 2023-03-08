@@ -106,7 +106,7 @@ ul {
     transition: 0.3s ease-in-out;
 }
 
-video {
+iframe {
     height: 50%;
     width: 50%;
     position: fixed;
