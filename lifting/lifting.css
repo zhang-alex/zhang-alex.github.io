@@ -95,7 +95,7 @@ ul {
     border: 3px solid #000;
     border-radius: 10px;
     transition: 0.3s ease-in-out;
-    min-width: 30rem;
+    min-width: 27rem;
 }
 
 .lift-button:hover {

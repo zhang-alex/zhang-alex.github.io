@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 15px;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.grid-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: white;
+  font-family: "Maven Pro", sans-serif;
+  overflow: hidden; /* Hide any content that overflows the cell */
+  transition: transform 0.3s;
+  overflow: hidden; /* Hide any content that overflows the cell */
+  transition: transform 0.3s, filter 0.3s; /* Add transition properties */
+}
+
+.grid-cell:hover {
+  transform: scale(1.05); /* Zoom in the image on hover */
+  filter: brightness(0.5); /* Darken the image by 50% on hover */
+}
+
+.grid-cell .year {
+  font-size: 300%; /* Set the font size to half of the parent's width */
+}
