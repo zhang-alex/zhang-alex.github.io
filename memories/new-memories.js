@@ -1,4 +1,10 @@
 window.addEventListener("DOMContentLoaded", () => {
+  const totalImages = {
+    2019: 4,
+    2020: 1,
+    2021: 0,
+  };
+
   let cells = document.querySelectorAll(".grid-cell");
   var counter;
 
@@ -38,20 +44,40 @@ window.addEventListener("DOMContentLoaded", () => {
 
     // Left arrow click event
     modal.querySelector(".modal-arrow.left").onclick = () => {
-      counter--;
-      updateModalContent(year);
+      if (counter > 1) {
+        counter--;
+        updateModalContent(year);
+      } else {
+        closeModal();
+      }
     };
 
     // Right arrow click event
     modal.querySelector(".modal-arrow.right").onclick = () => {
-      counter++;
-      updateModalContent(year);
+      const totalImagesForYear = totalImages[year] || 0;
+      if (counter < totalImagesForYear) {
+        counter++;
+        updateModalContent(year);
+      } else {
+        closeModal();
+      }
     };
   }
 
   function updateModalContent(year) {
     const imageUrl = `${year}/${counter}.png`;
     modal.style.backgroundImage = `url('${imageUrl}')`;
+
+    // Update counter and total images
+    const counterElement = modal.querySelector(".counter");
+    if (counterElement) {
+      counterElement.textContent = `${counter} / ${totalImages[year] || 0}`;
+    } else {
+      const counterElement = createMyElement("div", { class: "counter" }, [
+        `${counter} / ${totalImages[year] || 0}`,
+      ]);
+      modal.appendChild(counterElement);
+    }
   }
 
   modalBackground.addEventListener("click", () => {
