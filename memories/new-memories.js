@@ -34,8 +34,24 @@ window.addEventListener("DOMContentLoaded", () => {
     }, 10);
 
     counter = 1;
+    updateModalContent(year);
 
-    modal.style.backgroundImage = `url('${year}/${counter}.png')`;
+    // Left arrow click event
+    modal.querySelector(".modal-arrow.left").onclick = () => {
+      counter--;
+      updateModalContent(year);
+    };
+
+    // Right arrow click event
+    modal.querySelector(".modal-arrow.right").onclick = () => {
+      counter++;
+      updateModalContent(year);
+    };
+  }
+
+  function updateModalContent(year) {
+    const imageUrl = `${year}/${counter}.png`;
+    modal.style.backgroundImage = `url('${imageUrl}')`;
   }
 
   modalBackground.addEventListener("click", () => {

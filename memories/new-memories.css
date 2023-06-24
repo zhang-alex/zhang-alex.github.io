@@ -24,114 +24,116 @@ body {
   background-position: center center;
   color: white;
   font-family: "Maven Pro", sans-serif;
-  overflow: hidden; /* Hide any content that overflows the cell */
-  transition: transform 0.3s;
-  overflow: hidden; /* Hide any content that overflows the cell */
-  transition: transform 0.3s, filter 0.3s; /* Add transition properties */
+  overflow: hidden;
+  transition: transform 0.3s, filter 0.3s;
 }
 
 .grid-cell:hover {
-  transform: scale(1.05); /* Zoom in the image on hover */
-  filter: brightness(0.5); /* Darken the image by 50% on hover */
+  transform: scale(1.05);
+  filter: brightness(0.5);
 }
 
 .grid-cell .year {
-  font-size: 300%; /* Set the font size to half of the parent's width */
+  font-size: 300%;
 }
 
-
 .modal {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) translateY(120%);
-    background-color: #fff;
-    width: 1500px;
-    max-width: 80%;
-    height: 80%;
-    overflow-y: auto;
-    z-index: 10;
-    /*opacity: 0;*/
-    transition: 0.6s cubic-bezier(0.22, 1, 0.36, 1.2);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  background-color: #000;
+  width: 90%;
+  max-width: 90%;
+  height: 90%;
+  overflow-y: auto;
+  z-index: 10;
+  transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1.2);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  pointer-events: none; /* Added */
 }
 
 .modal.modal-open {
-    /*opacity: 1;*/
-    transform: translate(-50%, -50%) translateY(0);
-    transition-duration: 0.9s;
-    transition-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
+  opacity: 1;
+  transition-duration: 0.9s;
+  transition-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
+  pointer-events: auto; /* Added */
 }
 
 #modal-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
 }
 
 #close-modal {
-    border: none;
-    background-color: transparent;
-    font-size: 2rem;
-    cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-size: 2rem;
+  cursor: pointer;
 }
 
 #modal-content {
-    padding: 0;
+  padding: 0;
 }
 
 .modal-open {
-    overflow: hidden;
+  overflow: hidden;
 }
 
-.modal-open .modal{
-    display: block;
+.modal-open .modal {
+  display: block;
 }
 
 #modal-background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    transition: 0.9s cubic-bezier(0.22, 0.61, 0.36, 1);
-    pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.9s cubic-bezier(0.22, 0.61, 0.36, 1);
+  pointer-events: none;
 }
 
 .modal-open #modal-background {
-    opacity: 1;
-    transition: 0.9s cubic-bezier(0.22, 0.61, 0.36, 1);
-    pointer-events: all ;
+  opacity: 1;
+  transition: 0.9s cubic-bezier(0.22, 0.61, 0.36, 1);
+  pointer-events: all;
 }
 
-      /* Add CSS for the left and right arrows */
-      .modal-arrow {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 40px;
-        height: 40px;
-        background-color: rgba(255, 255, 255, 0.5); /* Set the background color */
-        color: black; /* Set the arrow color */
-        font-size: 24px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        transition: background-color 0.3s;
-      }
+.modal-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15%;
+  height: 100%;
+  background-color: transparent;
+  color: black;
+  font-size: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  z-index: 100;
+  color: white;
+}
 
-      .modal-arrow:hover {
-        background-color: rgba(255, 255, 255, 0.8); /* Set the hover background color */
-      }
+.modal-arrow.left {
+  left: 0;
+}
 
-      .modal-arrow.left {
-        left: 10px;
-      }
+.modal-arrow.right {
+  right: 0;
+}
 
-      .modal-arrow.right {
-        right: 10px;
-      }
+.modal-arrow:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
