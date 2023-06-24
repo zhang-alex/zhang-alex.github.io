@@ -1,5 +1,6 @@
 window.addEventListener("DOMContentLoaded", () => {
   let cells = document.querySelectorAll(".grid-cell");
+  var counter;
 
   // Function to set background image for a cell
   const setBackgroundImage = (cell, year) => {
@@ -15,72 +16,26 @@ window.addEventListener("DOMContentLoaded", () => {
 
   const modalBackground = document.getElementById("modal-background");
   const body = document.querySelector("body");
-
   const modal = document.getElementById("media-modal");
 
-  document.getElementById("2019").onclick = () =>
-    lift_listener("https://www.youtube.com/embed/f7DyEnjTKFg");
-  document.getElementById("2020").onclick = () =>
-    lift_listener("https://www.youtube.com/embed/n1f9tYosyAw");
-  document.getElementById("2021").onclick = () =>
-    lift_listener("https://www.youtube.com/embed/VgEdAXVJ1l4");
-  document.getElementById("2022").onclick = () =>
-    lift_listener("https://www.youtube.com/embed/5NbM8EVRBKc");
-  document.getElementById("2023").onclick = () =>
-    lift_listener("https://www.youtube.com/embed/jSUbAPyZQzA");
-  document.getElementById("2024").onclick = () =>
-    lift_listener("https://www.youtube.com/embed/KsGGw8-xxs0");
-  document.getElementById("2025").onclick = () =>
-    lift_listener("https://www.youtube.com/embed/XEnzBf-RX4s");
+  document.getElementById("2019").onclick = () => show_media(2019);
+  document.getElementById("2020").onclick = () => show_media(2020);
+  document.getElementById("2021").onclick = () => show_media(2021);
+  document.getElementById("2022").onclick = () => show_media(2022);
+  document.getElementById("2023").onclick = () => show_media(2023);
+  document.getElementById("2024").onclick = () => show_media(2024);
+  document.getElementById("2025").onclick = () => show_media(2025);
 
-  function lift_listener(this_str) {
+  function show_media(year) {
     modal.style.display = "block";
     setTimeout(() => {
       modal.classList.add("modal-open");
       body.classList.add("modal-open");
     }, 10);
 
-    // const this_str = "https://www.youtube.com/embed/f7DyEnjTKFg";
+    counter = 1;
 
-    render_modal(this_str);
-  }
-
-  function render_modal(this_str) {
-    // render_modal_header(this_str);
-    render_body(this_str);
-  }
-
-  function render_modal_header(this_str) {
-    const title = createMyElement(
-      "h2",
-      null,
-      this_str.charAt(0).toUpperCase() + this_str.slice(1)
-    );
-    const close_button = createMyElement("button", { id: "close-modal" }, "×");
-    const header = createMyElement("div", { id: "modal-header" }, [
-      title,
-      close_button,
-    ]);
-
-    document.querySelector(".modal").appendChild(header);
-
-    const closeModalButton = document.getElementById("close-modal");
-    closeModalButton.addEventListener("click", () => {
-      closeModal();
-    });
-  }
-
-  function render_body(this_str) {
-    // const source = createMyElement('source', {src: `videos/${this_str}.mp4`, type: "video/mp4"})
-    // const video = createMyElement('video', source)
-    // video.controls = true;
-    const video = `<iframe width="100%" height="100%" src=${this_str} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`;
-    // const video = `<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="100%" height="100%" type="text/html" src="https://www.youtube.com/embed/f7DyEnjTKFg?autoplay=1&fs=1&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com"><div><small><a href="https://youtubeembedcode.com/de/">youtubeembedcode.com/de/</a></small></div><div><small><a href="https://yatzyregler.se/">https://yatzyregler.se/</a></small></div></iframe>`
-    // const video = createMyElement('iframe', {src: "https://youtu.be/f7DyEnjTKFg"});
-    // const body = createMyElement('div', {id: "modal-content"}, video);
-    const body = createMyElement("div", { id: "modal-content" });
-    body.innerHTML = video;
-    document.querySelector(".modal").appendChild(body);
+    modal.style.backgroundImage = `url('${year}/${counter}.png')`;
   }
 
   modalBackground.addEventListener("click", () => {
@@ -117,3 +72,18 @@ window.addEventListener("DOMContentLoaded", () => {
     return myElement;
   };
 });
+
+//   document.getElementById("2019").onclick = () =>
+//     lift_listener("https://www.youtube.com/embed/f7DyEnjTKFg");
+//   document.getElementById("2020").onclick = () =>
+//     lift_listener("https://www.youtube.com/embed/n1f9tYosyAw");
+//   document.getElementById("2021").onclick = () =>
+//     lift_listener("https://www.youtube.com/embed/VgEdAXVJ1l4");
+//   document.getElementById("2022").onclick = () =>
+//     lift_listener("https://www.youtube.com/embed/5NbM8EVRBKc");
+//   document.getElementById("2023").onclick = () =>
+//     lift_listener("https://www.youtube.com/embed/jSUbAPyZQzA");
+//   document.getElementById("2024").onclick = () =>
+//     lift_listener("https://www.youtube.com/embed/KsGGw8-xxs0");
+//   document.getElementById("2025").onclick = () =>
+//     lift_listener("https://www.youtube.com/embed/XEnzBf-RX4s");
