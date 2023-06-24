@@ -2,15 +2,17 @@ window.addEventListener("DOMContentLoaded", () => {
   const totalImages = {
     2019: 4,
     2020: 1,
-    2021: 0,
+    2021: 86,
+    2022: 86,
   };
 
   let cells = document.querySelectorAll(".grid-cell");
   var counter;
+  var keydownListener; // Variable to store the reference to the keydown event listener
 
   // Function to set background image for a cell
   const setBackgroundImage = (cell, year) => {
-    const imageUrl = `${year}.png`;
+    const imageUrl = `${year}.jpeg`;
     cell.style.backgroundImage = `url('${imageUrl}')`;
   };
 
@@ -62,10 +64,34 @@ window.addEventListener("DOMContentLoaded", () => {
         closeModal();
       }
     };
+
+    // Event listener for keydown event
+    keydownListener = (event) => {
+      if (event.keyCode === 37) {
+        // Left arrow key
+        if (counter > 1) {
+          counter--;
+          updateModalContent(year);
+        } else {
+          closeModal();
+        }
+      } else if (event.keyCode === 39) {
+        // Right arrow key
+        const totalImagesForYear = totalImages[year] || 0;
+        if (counter < totalImagesForYear) {
+          counter++;
+          updateModalContent(year);
+        } else {
+          closeModal();
+        }
+      }
+    };
+
+    document.addEventListener("keydown", keydownListener);
   }
 
   function updateModalContent(year) {
-    const imageUrl = `${year}/${counter}.png`;
+    const imageUrl = `${year}/${counter.toString().padStart(2, "0")}.jpeg`;
     modal.style.backgroundImage = `url('${imageUrl}')`;
 
     // Update counter and total images
@@ -90,6 +116,9 @@ window.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => {
       modal.style.display = "none";
     }, 300);
+
+    // Remove the keydown event listener
+    document.removeEventListener("keydown", keydownListener);
   }
 
   createMyElement = (type, attributes, children) => {
