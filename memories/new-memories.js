@@ -92,7 +92,8 @@ window.addEventListener("DOMContentLoaded", () => {
 
   function updateModalContent(year) {
     const imageUrl = `${year}/${counter.toString().padStart(2, "0")}.jpeg`;
-    modal.style.backgroundImage = `url('${imageUrl}')`;
+    //   const imageUrl = `https://www.drive.google.com/file/d/1a5zFvnV1WKaxN2ZtDzmAVDbu45xbbIDQ`
+      modal.style.backgroundImage = `url('${imageUrl}')`;
 
     // Update counter and total images
     const counterElement = modal.querySelector(".counter");
